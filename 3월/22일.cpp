@@ -29,7 +29,6 @@ int main() {
 		virus.push_back(pair1); virus.push_back(pair2);
 	}
 
-
 	findVirus(virus, infection, n, connected, 1);
 
 	for (int i = 1; i < n; i++) {
