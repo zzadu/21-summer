@@ -12,10 +12,6 @@ int main() {
         cin >> v[i];
     }
 
-    // vector<int> asc;
-    // asc.push_back(v[0]);
-
-    int maxIndex = 0;
     int max = 0;
 
     for (int i = 0; i < n; i++) {
@@ -28,7 +24,6 @@ int main() {
             }
             if (v[j] > asc[asc.size() - 1]) {
                 asc.push_back(v[j]);
-                maxIndex = j;
                 continue;
             }
 
@@ -94,7 +89,6 @@ int main() {
 
         int result = asc.size();
         
-
         if (result > max) {
             max = result;
         }
